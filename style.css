@@ -1,0 +1,11 @@
+/* This styling is the same as the previous response, keeping it contained */
+#waveform-container {
+    width: 100%;
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #1a1a1a; 
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+/* No other styling needed if we are only embedding the content */
