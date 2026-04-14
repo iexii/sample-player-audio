@@ -1,18 +1,21 @@
 // --- CONFIGURATION ---
-// !!! IMPORTANT: Use the URL to your uploaded MP3 file !!!
-// Example: "https://yourusername.github.io/sample-player-audio/stellar-drift.mp3"
+// !!! IMPORTANT: Double-check this URL is correct and accessible !!!
 const AUDIO_URL = "stellar-drift.mp3"; 
 // ----------------------
 
-// Initialize WaveSurfer.js
-const wavesurfer = WaveSurfer.create({
-    el: 'waveform', 
-    waveColor: '#00bcd4', 
-    progressColor: '#ff5722', 
-    cursorColor: '#ff5722', 
-    barWidth: 1.5, 
-    height: 100 
-});
+// IMPORTANT: We wrap all the code in this event listener.
+// This tells the browser: "DON'T RUN ANYTHING YET. Wait until the entire page is ready."
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Initialize WaveSurfer.js
+    const wavesurfer = WaveSurfer.create({
+        el: 'waveform', // Must match the ID in your HTML
+        waveColor: '#00bcd4', 
+        progressColor: '#ff5722', 
+        cursorColor: '#ff5722', 
+        barWidth: 1.5, 
+        height: 100 
+    });
 
-// Load the audio file
-wavesurfer.load(AUDIO_URL);
+    // 2. Load the audio file
+    wavesurfer.load(audioUrl); 
+});
