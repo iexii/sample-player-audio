@@ -1,6 +1,6 @@
 // --- CONFIGURATION ---
 // !!! IMPORTANT: Double-check this URL is correct and accessible !!!
-const AUDIO_URL = "stellar-drift.mp3"; 
+const AUDIO_URL = "https://raw.githubusercontent.com/iexii/player/main/testt.mp3"; 
 // ----------------------
 
 // IMPORTANT: We wrap all the code in this event listener.
